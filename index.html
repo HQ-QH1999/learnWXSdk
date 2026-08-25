@@ -1,184 +1,13 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>learnWXSdk - 微信 SDK 接入学习项目</title>
-
-    <meta name="description"
-          content="learnWXSdk 是一个用于学习 Unity 微信 SDK 接入的个人开发项目。">
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         "Microsoft YaHei", sans-serif;
-            color: #1f2937;
-            background: #f8fafc;
-            line-height: 1.7;
-        }
-
-        .container {
-            width: min(1000px, 90%);
-            margin: 0 auto;
-        }
-
-        header {
-            padding: 90px 0 70px;
-            background: white;
-            text-align: center;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 25px;
-            border-radius: 20px;
-            background: #07c160;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        h1 {
-            margin: 0 0 15px;
-            font-size: 42px;
-            color: #111827;
-        }
-
-        .subtitle {
-            margin: 0;
-            font-size: 19px;
-            color: #6b7280;
-        }
-
-        section {
-            padding: 65px 0;
-        }
-
-        section:nth-child(even) {
-            background: white;
-        }
-
-        h2 {
-            margin-top: 0;
-            margin-bottom: 30px;
-            font-size: 30px;
-            text-align: center;
-            color: #111827;
-        }
-
-        .intro {
-            max-width: 760px;
-            margin: 0 auto;
-            text-align: center;
-            color: #4b5563;
-            font-size: 17px;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            padding: 28px;
-            background: white;
-            border-radius: 14px;
-            border: 1px solid #e5e7eb;
-        }
-
-        section:nth-child(even) .card {
-            background: #f8fafc;
-        }
-
-        .card h3 {
-            margin-top: 0;
-            color: #111827;
-        }
-
-        .card p {
-            margin-bottom: 0;
-            color: #6b7280;
-        }
-
-        .developer {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .email {
-            color: #07a957;
-            font-weight: 600;
-        }
-
-        footer {
-            padding: 30px 0;
-            text-align: center;
-            color: #9ca3af;
-            font-size: 14px;
-        }
-
-        @media (max-width: 700px) {
-            h1 {
-                font-size: 34px;
-            }
-
-            .features {
-                grid-template-columns: 1fr;
-            }
-
-            header {
-                padding: 70px 0 55px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <div class="container">
-        <div class="logo">WX</div>
-
-        <h1>learnWXSdk</h1>
-
-        <p class="subtitle">
-            Unity 微信 SDK 接入学习项目
-        </p>
-    </div>
-</header>
-
 <section>
     <div class="container">
-        <h2>关于项目</h2>
 
-        <p class="intro">
-            learnWXSdk 是一个个人开发者创建的学习项目，
-            主要用于学习和实践 Unity 与微信 SDK 的集成、
-            Android 原生交互以及相关功能调用。
-        </p>
-    </div>
-</section>
-
-<section>
-    <div class="container">
         <h2>项目内容</h2>
 
         <div class="features">
 
             <div class="card">
                 <h3>Unity SDK 接入</h3>
+
                 <p>
                     学习 Unity 项目中第三方 SDK 的接入流程，
                     包括 Android Library、AAR 以及相关配置。
@@ -187,6 +16,7 @@
 
             <div class="card">
                 <h3>微信 SDK</h3>
+
                 <p>
                     学习微信 SDK 在 Android 环境中的配置、
                     初始化以及相关接口调用。
@@ -194,51 +24,15 @@
             </div>
 
             <div class="card">
-                <h3>功能测试</h3>
+                <h3>原生交互</h3>
+
                 <p>
-                    用于测试登录、分享、支付等 SDK
-                    相关功能以及 Unity 与 Android 之间的交互。
+                    学习 Unity 与 Android 原生代码之间的交互，
+                    掌握 UnitySendMessage 等相关通信方式。
                 </p>
             </div>
 
         </div>
+
     </div>
 </section>
-
-<section>
-    <div class="container">
-        <h2>开发者信息</h2>
-
-        <div class="developer">
-            <p>
-                开发者：个人开发者
-            </p>
-
-            <p>
-                联系邮箱：
-                <span class="email">
-                    2537667701@qq.com
-                </span>
-            </p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <h2>隐私说明</h2>
-
-        <p class="intro">
-            本项目主要用于个人学习和技术实践。
-            项目本身不会主动收集、出售或向第三方提供用户个人信息。
-            如后续功能发生变化，将根据实际情况更新相关说明。
-        </p>
-    </div>
-</section>
-
-<footer>
-    © 2026 learnWXSdk. All rights reserved.
-</footer>
-
-</body>
-</html>
